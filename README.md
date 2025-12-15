@@ -133,3 +133,18 @@ Contoh IP DNS yang ditambahkan: 192.168.0.137 => sesuai IP Address pada domain .
 ping Kaguai.net
 ```
 Jika perangkat dapat melakukan ping dan mendapatkan IP yang sama seperti hasil di server DNS, maka DNS kalian telah berfungsi dengan baik pada seluruh jaringan lokal.
+
+Kalian juga dapat mencoba tools Otomatis yang saya buat, dengan cara seperti berikut:
+```bash
+git clone https://github.com/Kaguai10/DNS_SERVER.git
+
+cd DNS_SERVER
+
+chmod +x run.sh
+
+#lalu Jalankan run.sh dan bisa gunakan --help untuk melihat opsi yang tersedia
+#contoh menjalankannya
+
+sudo ./run.sh -D kaguai10.net -A 192.168.0.137 -S www
+```
+
